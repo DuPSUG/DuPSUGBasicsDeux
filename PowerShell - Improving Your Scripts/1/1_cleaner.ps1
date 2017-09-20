@@ -6,7 +6,7 @@ param(
     [Parameter( Position = 0,
         Mandatory = $true)]
     [ValidateScript( {Test-Path $_})]
-    [Alias('Please provide base path to start search')]
+    [HelpMessage('Please provide base path to start search')]
     $BasePath,
     [Parameter( Position = 1)]
     [int]$Age = 0,
