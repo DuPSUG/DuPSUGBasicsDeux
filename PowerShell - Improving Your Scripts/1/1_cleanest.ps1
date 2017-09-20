@@ -30,12 +30,12 @@ function Get-LockedFiles {
         [Parameter( Position = 0,
             Mandatory = $true)]
         [ValidateScript( {Test-Path $_})]
-        [Alias('Please provide base path to start search')]
+        [HelpMessage('Please provide base path to start search')]
         $BasePath,
         [Parameter( Position = 1)]
         [int]$Age = 0,
         [Parameter( Position = 2)]
-        [Alias('Please provide full path for output csv file')]
+        [HelpMessage('Please provide full path for output csv file')]
         [string]$OutputFolder = $PSScriptRoot,
         [Switch]$Save
     )
